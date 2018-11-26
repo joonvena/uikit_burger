@@ -1,0 +1,52 @@
+body {
+    color: #FFF !important;
+}
+
+
+nav a {
+    color: #FFF !important;
+}
+
+.uk-navbar-right {
+    padding-right: 30px;
+}
+
+.uk-navbar-left a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.uk-navbar-left {
+    padding-left: 30px;
+}
+
+.search_restaurant_section {
+    margin-top: 150px;
+}
+
+.search_bar {
+    background-color: #FFF !important;
+    opacity: 0.8;
+    font-size: 20px !important;
+}
+
+.restaurant_info_section {
+    margin-top: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .restaurant_info_section {
+        margin-top: 50px;
+    }
+    
+}
+
+.uk-card-body_new {
+    padding-top: 20px;
+}
+
+.uk-card-body_new_index {
+    padding-right: 10px;
+}

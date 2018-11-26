@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UIKit test</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/custom_syles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+
+        <div class="uk-container uk-container-expand uk-padding-remove">
+  
+                <div class="uk-cover-container uk-height-viewport">
+                        <img src="img/burgerheader.jpg" alt="" uk-cover>
+                        <div class="uk-position-top">
+                            <nav class="uk-navbar">
+                                <div class="uk-navbar-left">
+                                        <a class="uk-navbar-item uk-logo" href="#">BurgerLoversFinland</a>
+                                </div>
+                                <div class="uk-navbar-right">        
+                                    <ul class="uk-navbar-nav uk-hidden-small">
+                                        <li><a href="#">Etusivu</a></li>
+                                        <li><a href="#">Ravintolat</a></li>
+                                        <li><a href="#">Lisää ravintola</a></li>
+                                    </ul>
+                                    <a href="#mobile_nav"  class="uk-navbar-toggle uk-visible-small" uk-offcanvas></a>
+                            </nav>
+                            <div id="mobile_nav" class="uk-offcanvas">
+                                    <ul class="uk-navbar-nav">
+                                            <li><a href="#">Etusivu</a></li>
+                                            <li><a href="#">Ravintolat</a></li>
+                                            <li><a href="#">Lisää ravintola</a></li>
+                                        </ul>
+                                </div>
+                      
+
+                        <div class="uk-grid uk-grid-collapse search_restaurant_section" uk-grid>
+                                <div class="uk-width-1-4"></div>
+                                <div class="uk-width-1-2">
+                                        <form class="uk-search uk-search-large uk-width-1-1">
+                                                <span uk-search-icon class="search_icon"></span>
+                                                <input class="uk-search-input search_bar" type="search" placeholder="Hae ravintolaa...">
+                                            </form>
+                                    </div>
+                                <div class="uk-width-1-4"></div>
+                            </div>
+
+                    </div>
+
+                
+
+        </div>
+
+    </body>
+</html>
