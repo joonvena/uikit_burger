@@ -8,13 +8,13 @@ nav a {
 }
 
 .uk-navbar-right {
-    padding-right: 30px;
+    padding-right: 40px;
 }
 
-.uk-navbar-left a {
+.uk-navbar-center a {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 60px;
 }
 
 .uk-navbar-left {
@@ -32,7 +32,8 @@ nav a {
 }
 
 .restaurant_info_section {
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -40,8 +41,23 @@ nav a {
     .restaurant_info_section {
         margin-top: 50px;
     }
+
+    .uk-navbar-center a {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .menu_button {
+        margin-top: 60px;
+    }
+
     
 }
+
+.menu_button {
+        margin-top: 60px;
+    }
 
 .uk-card-body_new {
     padding-top: 20px;
@@ -50,3 +66,43 @@ nav a {
 .uk-card-body_new_index {
     padding-right: 10px;
 }
+
+.comment {
+    background-color: #FFF;
+    color: #CCC;
+    padding: 10px;
+}
+
+.comment p {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.uk-panel-scrollable {
+    overflow: auto;
+    border: 0;
+    z-index: 999999;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
