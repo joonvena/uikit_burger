@@ -1,190 +1,210 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>UIKit test</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/uikit.min.css" />
-        <link rel="stylesheet" href="css/custom_syles.css" />
-        <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-    </head>
-    <body>
 
-        <div class="uk-container uk-container-expand uk-padding-remove">
-  
-                <div class="uk-cover-container uk-height-viewport">
-                        <img src="img/burgerheader.jpg"  alt="" uk-cover>
-                        <div class="uk-position-top">
-                            
-                            <nav class="uk-navbar uk-padding-large">
-                                <div class="uk-navbar-center">
-                                        <a class="uk-navbar-item uk-logo" href="#">BurgerLoversFinland</a>
-                                </div>
-                            
-                                <div class="uk-navbar-center menu_button">       
-                                        <a href="#offcanvas-slide" class="uk-button uk-button-secondary uk-button-large" style="font-size: 16px;" uk-toggle>Menu</a>
+<head>
+    <title>UIKit test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/custom_syles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
 
-                                        <div id="offcanvas-slide" uk-offcanvas>
-                                            <div class="uk-offcanvas-bar">
-                                        
-                                                <ul class="uk-nav uk-nav-default">
-                                                        <a class="uk-navbar-item uk-logo" href="#">BurgerLoversFinland</a>
-                                                        <li><a href="#">Etusivu</a></li>
-                                                        <li><a href="#">Ravintolat</a></li>
-                                                        <li><a href="#">Lisää ravintola</a></li>
-                                                </ul>
-                                        
-                                            </div>
-                                        </div>
-                                    </div>
-                            </nav>
-            
-                      
-                        <div class="uk-panel-scrollable uk-height-viewport uk-position-top" style="padding-top: 70px;">
+<body>
 
-                        <div class="uk-grid uk-grid-collapse  restaurant_info_section" uk-grid>
-                                <div class="uk-width-1-4"></div>
-                                        <div class="uk-width-1-2@s">
-                                            <div class="uk-width-1-1">
-                                        <div class="uk-card-header uk-card-default uk-card">
-                                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                    <div class="uk-width-auto">
-                                                        <img class="uk-border-circle" width="40" height="40" src="img/burger_review.png">
-                                                    </div>
-                                                    <div class="uk-width-expand">
-                                                        <h3 class="uk-card-title uk-margin-remove-bottom">Social Burger Joint</h3>
-                                                        <p class="uk-text-meta uk-margin-remove-top">Kaivokatu 8 Citycenter, Helsinki</p>
-                                                    </div>
-                                                </div>
-                                                <hr class="uk-diver-small">
-                                            </div>
-                                            
-                                            <div class="uk-card uk-card-body_new uk-card-body uk-card-default uk-grid-collapse uk-child-width-expand uk-margin-remove-top" uk-grid>
-                                                    <div class="uk-flex-last uk-card-media-right uk-cover-container map_container">
-                                                        <img src="img/map.png" alt="" uk-cover>
-                                                        <canvas width="600" height="400"></canvas>
-                                                    </div>
-                                            
-                                     
-                                            <div class="uk-card-body_new_index uk-width-expand">
-                                                <h3 class="uk-card-title">Arvosanat</h3>
-                                                <p>Hampurilainen: ★★★</p>
-                                                <p>Lisukkeet: ★★★★★</p>
-                                                <p>Ravintolan yleiskuva: ★★★★★</p>
-                                      </div>
-                                      
-                                    </div>
-                            
-                                        
-                                  
+    <div class="uk-container uk-container-expand uk-padding-remove">
 
-                                    <div class="uk-width-1-1 comment" style="margin-bottom: 150px;">
+        <div class="uk-cover-container uk-height-viewport">
+            <img src="img/burgerheader.jpg" alt="" uk-cover>
+            <div class="uk-position-top">
 
-                                    <article class="uk-comment">
-                                            <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80" alt="">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Joonas Venäläinen</a></h4>
-                                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                        <li><a href="#">★★★★★</a></li>
-                                                        <li><a href="#"></a></li>
-                                                    </ul>
-                                                </div>
-                                            </header>
-                                            <div class="uk-comment-body">
-                                                <p>Todella maistuvat hampurilaset. Suosittelen!</p>
-                                            </div>
-                                        </article>
-
-
-                                        <article class="uk-comment">
-                                                <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;" uk-grid>
-                                                    <div class="uk-width-auto">
-                                                        <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80" alt="">
-                                                    </div>
-                                                    <div class="uk-width-expand">
-                                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Joonas Venäläinen</a></h4>
-                                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                            <li><a href="#">★★★★★</a></li>
-                                                            <li><a href="#"></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </header>
-                                                <div class="uk-comment-body">
-                                                    <p>Todella maistuvat hampurilaset. Suosittelen!</p>
-                                                </div>
-                                            </article>
-
-
-                                            <article class="uk-comment">
-                                                    <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;" uk-grid>
-                                                        <div class="uk-width-auto">
-                                                            <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80" alt="">
-                                                        </div>
-                                                        <div class="uk-width-expand">
-                                                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Joonas Venäläinen</a></h4>
-                                                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                                <li><a href="#">★★★★★</a></li>
-                                                                <li><a href="#"></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </header>
-                                                    <div class="uk-comment-body">
-                                                        <p>Todella maistuvat hampurilaset. Suosittelen!</p>
-                                                    </div>
-                                                </article>
-
-                                                <article class="uk-comment">
-                                                        <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;" uk-grid>
-                                                            <div class="uk-width-auto">
-                                                                <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80" alt="">
-                                                            </div>
-                                                            <div class="uk-width-expand">
-                                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Joonas Venäläinen</a></h4>
-                                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                                    <li><a href="#">★★★★★</a></li>
-                                                                    <li><a href="#"></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </header>
-                                                        <div class="uk-comment-body">
-                                                            <p>Todella maistuvat hampurilaset. Suosittelen!</p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="uk-comment">
-                                                            <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;" uk-grid>
-                                                                <div class="uk-width-auto">
-                                                                    <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80" alt="">
-                                                                </div>
-                                                                <div class="uk-width-expand">
-                                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Joonas Venäläinen</a></h4>
-                                                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                                        <li><a href="#">★★★★★</a></li>
-                                                                        <li><a href="#"></a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </header>
-                                                            <div class="uk-comment-body">
-                                                                <p>Todella maistuvat hampurilaset. Suosittelen!</p>
-                                                            </div>
-                                                        </article>
-                                                        
-                                    </div>
-                                    </div>
-                                    
-                                    </div>
-                                <div class="uk-width-1-4"></div>
-                            </div>
-
+                <nav class="uk-navbar uk-padding-large">
+                    <div class="uk-navbar-center">
+                        <a class="uk-navbar-item uk-logo" href="#">BurgerLoversFinland</a>
                     </div>
 
-                
+                    <div class="uk-navbar-center menu_button" style="z-index: 99999; position: absolute; margin-left: 27.9%; margin-top: 6.8%;">
+                        <a href="#offcanvas-slide" class="uk-button uk-button-secondary uk-button-large" style="font-size: 16px;"
+                            uk-toggle>Menu</a>
 
-        </div>
+                        <div id="offcanvas-slide" style="z-index: 100000; position: absolute;" uk-offcanvas>
+                            <div class="uk-offcanvas-bar">
 
-    </body>
+                                <ul class="uk-nav uk-nav-default">
+                                    <li><a href="#">Etusivu</a></li>
+                                    <li><a href="#">Ravintolat</a></li>
+                                    <li><a href="#">Lisää ravintola</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div class="uk-panel-scrollable uk-height-viewport uk-position-top" style="padding-top: 70px;">
+
+                    <div class="uk-grid uk-grid-collapse  restaurant_info_section" uk-grid>
+                        <div class="uk-width-1-4"></div>
+                        <div class="uk-width-1-2@s">
+                            <div class="uk-width-1-1">
+                                <div class="uk-card-header uk-card-default uk-card">
+                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" width="40" height="40" src="img/burger_review.png">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <h3 class="uk-card-title uk-margin-remove-bottom">Social Burger Joint</h3>
+                                            <p class="uk-text-meta uk-margin-remove-top">Kaivokatu 8 Citycenter,
+                                                Helsinki</p>
+                                        </div>
+                                    </div>
+                                    <hr class="uk-diver-small">
+                                </div>
+
+                                <div class="uk-card uk-card-body_new uk-card-body uk-card-default uk-grid-collapse uk-child-width-expand uk-margin-remove-top"
+                                    uk-grid>
+                                    <div class="uk-flex-last uk-card-media-right uk-cover-container map_container">
+                                        <img src="img/map.png" alt="" uk-cover>
+                                        <canvas width="600" height="400"></canvas>
+                                    </div>
+
+
+                                    <div class="uk-card-body_new_index uk-width-expand">
+                                        <h3 class="uk-card-title">Arvosanat</h3>
+                                        <p>Hampurilainen: ★★★</p>
+                                        <p>Lisukkeet: ★★★★★</p>
+                                        <p>Ravintolan yleiskuva: ★★★★★</p>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                <div class="uk-width-1-1 comment" style="margin-bottom: 150px;">
+
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80"
+                                                    alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                                        href="#">Joonas Venäläinen</a></h4>
+                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                    <li><a href="#">★★★★★</a></li>
+                                                    <li><a href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Todella maistuvat hampurilaset. Suosittelen!</p>
+                                        </div>
+                                    </article>
+
+
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80"
+                                                    alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                                        href="#">Joonas Venäläinen</a></h4>
+                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                    <li><a href="#">★★★★★</a></li>
+                                                    <li><a href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Todella maistuvat hampurilaset. Suosittelen!</p>
+                                        </div>
+                                    </article>
+
+
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80"
+                                                    alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                                        href="#">Joonas Venäläinen</a></h4>
+                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                    <li><a href="#">★★★★★</a></li>
+                                                    <li><a href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Todella maistuvat hampurilaset. Suosittelen!</p>
+                                        </div>
+                                    </article>
+
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80"
+                                                    alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                                        href="#">Joonas Venäläinen</a></h4>
+                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                    <li><a href="#">★★★★★</a></li>
+                                                    <li><a href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Todella maistuvat hampurilaset. Suosittelen!</p>
+                                        </div>
+                                    </article>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-grid-medium uk-flex-middle" style="padding-left: 25px; padding-top: 20px;"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-comment-avatar" src="img/profile.jpg" width="80" height="80"
+                                                    alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                                        href="#">Joonas Venäläinen</a></h4>
+                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                    <li><a href="#">★★★★★</a></li>
+                                                    <li><a href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Todella maistuvat hampurilaset. Suosittelen!</p>
+                                        </div>
+                                    </article>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-4"></div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+</body>
+
 </html>
