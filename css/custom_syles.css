@@ -11,10 +11,12 @@ nav a {
     padding-right: 40px;
 }
 
-.uk-navbar-center a {
+.burger_header  {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 60px;
+    color: #FFF;
+    text-shadow: 2px 2px #000;
 }
 
 .uk-navbar-left {
@@ -42,10 +44,11 @@ nav a {
         margin-top: 50px;
     }
 
-    .uk-navbar-center a {
+    .burger_header {
         font-family: 'Oswald', sans-serif;
         font-weight: bold;
         font-size: 40px;
+        color: #FFF;
     }
 
     .menu_button {
@@ -105,4 +108,5 @@ nav a {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
 
